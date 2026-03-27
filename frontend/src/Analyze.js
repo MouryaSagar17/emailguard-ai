@@ -36,7 +36,7 @@ export default function Analyze() {
 
     setLoading(true);
     try {
-      const res = await axios.post("http://127.0.0.1:8000/predict", {
+      const res = await axios.post("https://emailguard-backend.onrender.com/predict", {
         email_text: email,
       });
       setResult(res.data);
